@@ -1,0 +1,488 @@
+<div class="header">
+  <div class="header__left">
+    <i id="menu" class="material-icons" (click)="showSidebar()">menu</i>
+    <img
+      src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube-logo-full_color_light.svg?cache=72a5d9c"
+      alt=""
+    />
+  </div>
+  <div class="header__search">
+    <form action="">
+      <input type="text" placeholder="Search" />
+      <button><i class="material-icons">search</i></button>
+    </form>
+  </div>
+  <div class="header__icons">
+    <i class="material-icons display-this">search</i>
+    <i class="material-icons">videocam</i>
+    <i class="material-icons">apps</i>
+    <i class="material-icons">notifications</i>
+    <i class="material-icons display-this">account_circle</i>
+  </div>
+</div>
+<div class="mainBody">
+
+  <div class="sidebar"   [ngClass]="status ? 'show-sidebar' : ''">
+    <div class="sidebar__categories">
+      <div class="sidebar__category">
+        <i class="material-icons">home</i>
+        <span>Home</span>
+      </div>
+      <div class="sidebar__category">
+        <i class="material-icons">local_fire_department</i>
+        <span>Trending</span>
+      </div>
+      <div class="sidebar__category">
+        <i class="material-icons">subscriptions</i>
+        <span>Subcriptions</span>
+      </div>
+    </div>
+    <hr />
+    <div class="sidebar__categories">
+      <div class="sidebar__category">
+        <i class="material-icons">library_add_check</i>
+        <span>Library</span>
+      </div>
+      <div class="sidebar__category">
+        <i class="material-icons">history</i>
+        <span>History</span>
+      </div>
+      <div class="sidebar__category">
+        <i class="material-icons">play_arrow</i>
+        <span>Your Videos</span>
+      </div>
+      <div class="sidebar__category">
+        <i class="material-icons">watch_later</i>
+        <span>Watch Later</span>
+      </div>
+      <div class="sidebar__category">
+        <i class="material-icons">thumb_up</i>
+        <span>Liked Videos</span>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <div class="videos">
+    <h1>Recommended</h1>
+    <div class="videos__container">
+
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/jXqwfSID-Ws/mqdefault_6s.webp?du=3000&sqp=CK7OgpgG&rs=AOn4CLAVr1sK1y4YpqJlmYYv5zBE3iYUhA" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Admin Dashboard Template Free Download | Bootstrap 5 | Material Design Part 1
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/HoE5XWHxnFk/mqdefault_6s.webp?du=3000&sqp=CM7OgpgG&rs=AOn4CLA6YOgSW50nVrvieVRj-YkMAg1w1A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            How to create admin dashboard with Angular 14?
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/R_BoXBd9icg/mqdefault_6s.webp?du=3000&sqp=CNCkgpgG&rs=AOn4CLCNRFJ-GVFr5_OG4_XuO5Y0P42Z-A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Build Complete Ecommerce Website in Angular 13 - Home Page
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/CQXtZFaqvLI/mqdefault_6s.webp?du=3000&sqp=COaugpgG&rs=AOn4CLDyKUWzeSo9cDDyUmf7Idrq75l0cw" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Free Admin Dashboard Template Download
+            </h3>
+            <a href="">FreeeTemplates</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/jXqwfSID-Ws/mqdefault_6s.webp?du=3000&sqp=CK7OgpgG&rs=AOn4CLAVr1sK1y4YpqJlmYYv5zBE3iYUhA" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Admin Dashboard Template Free Download | Bootstrap 5 | Material Design Part 1
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/HoE5XWHxnFk/mqdefault_6s.webp?du=3000&sqp=CM7OgpgG&rs=AOn4CLA6YOgSW50nVrvieVRj-YkMAg1w1A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            How to create admin dashboard with Angular 14?
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/R_BoXBd9icg/mqdefault_6s.webp?du=3000&sqp=CNCkgpgG&rs=AOn4CLCNRFJ-GVFr5_OG4_XuO5Y0P42Z-A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Build Complete Ecommerce Website in Angular 13 - Home Page
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/CQXtZFaqvLI/mqdefault_6s.webp?du=3000&sqp=COaugpgG&rs=AOn4CLDyKUWzeSo9cDDyUmf7Idrq75l0cw" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Free Admin Dashboard Template Download
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">FreeeTemplates</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/jXqwfSID-Ws/mqdefault_6s.webp?du=3000&sqp=CK7OgpgG&rs=AOn4CLAVr1sK1y4YpqJlmYYv5zBE3iYUhA" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://i.ytimg.com/an_webp/jXqwfSID-Ws/mqdefault_6s.webp?du=3000&sqp=CK7OgpgG&rs=AOn4CLAVr1sK1y4YpqJlmYYv5zBE3iYUhA" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Admin Dashboard Template Free Download | Bootstrap 5 | Material Design Part 1
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/HoE5XWHxnFk/mqdefault_6s.webp?du=3000&sqp=CM7OgpgG&rs=AOn4CLA6YOgSW50nVrvieVRj-YkMAg1w1A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            How to create admin dashboard with Angular 14?
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/R_BoXBd9icg/mqdefault_6s.webp?du=3000&sqp=CNCkgpgG&rs=AOn4CLCNRFJ-GVFr5_OG4_XuO5Y0P42Z-A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Build Complete Ecommerce Website in Angular 13 - Home Page
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/CQXtZFaqvLI/mqdefault_6s.webp?du=3000&sqp=COaugpgG&rs=AOn4CLDyKUWzeSo9cDDyUmf7Idrq75l0cw" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Free Admin Dashboard Template Download
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">FreeeTemplates</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/jXqwfSID-Ws/mqdefault_6s.webp?du=3000&sqp=CK7OgpgG&rs=AOn4CLAVr1sK1y4YpqJlmYYv5zBE3iYUhA" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Admin Dashboard Template Free Download | Bootstrap 5 | Material Design Part 1
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/HoE5XWHxnFk/mqdefault_6s.webp?du=3000&sqp=CM7OgpgG&rs=AOn4CLA6YOgSW50nVrvieVRj-YkMAg1w1A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            How to create admin dashboard with Angular 14?
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/R_BoXBd9icg/mqdefault_6s.webp?du=3000&sqp=CNCkgpgG&rs=AOn4CLCNRFJ-GVFr5_OG4_XuO5Y0P42Z-A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Build Complete Ecommerce Website in Angular 13 - Home Page
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/CQXtZFaqvLI/mqdefault_6s.webp?du=3000&sqp=COaugpgG&rs=AOn4CLDyKUWzeSo9cDDyUmf7Idrq75l0cw" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Free Admin Dashboard Template Download
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">FreeeTemplates</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/jXqwfSID-Ws/mqdefault_6s.webp?du=3000&sqp=CK7OgpgG&rs=AOn4CLAVr1sK1y4YpqJlmYYv5zBE3iYUhA" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Admin Dashboard Template Free Download | Bootstrap 5 | Material Design Part 1
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/HoE5XWHxnFk/mqdefault_6s.webp?du=3000&sqp=CM7OgpgG&rs=AOn4CLA6YOgSW50nVrvieVRj-YkMAg1w1A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            How to create admin dashboard with Angular 14?
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/HoE5XWHxnFk/mqdefault_6s.webp?du=3000&sqp=CM7OgpgG&rs=AOn4CLA6YOgSW50nVrvieVRj-YkMAg1w1A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            How to create admin dashboard with Angular 14?
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/R_BoXBd9icg/mqdefault_6s.webp?du=3000&sqp=CNCkgpgG&rs=AOn4CLCNRFJ-GVFr5_OG4_XuO5Y0P42Z-A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Free Admin Dashboard Template Download
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">FreeeTemplates</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/jXqwfSID-Ws/mqdefault_6s.webp?du=3000&sqp=CK7OgpgG&rs=AOn4CLAVr1sK1y4YpqJlmYYv5zBE3iYUhA" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+            Angular 14 Admin Dashboard Template Free Download | Bootstrap 5 | Material Design Part 1
+            </h3>
+            <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+            <span>240 Views • 3 Months Ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <div class="video__thumbnail">
+          <img src="https://i.ytimg.com/an_webp/HoE5XWHxnFk/mqdefault_6s.webp?du=3000&sqp=CM7OgpgG&rs=AOn4CLA6YOgSW50nVrvieVRj-YkMAg1w1A" alt="" />
+        </div>
+        <div class="video__details">
+          <div class="author">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+          </div>
+          <div class="title">
+            <h3>
+              How to create admin dashboard with Angular 14?
+              </h3>
+              <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+              <span>240 Views • 3 Months Ago</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video">
+          <div class="video__thumbnail">
+            <img src="https://i.ytimg.com/an_webp/R_BoXBd9icg/mqdefault_6s.webp?du=3000&sqp=CNCkgpgG&rs=AOn4CLCNRFJ-GVFr5_OG4_XuO5Y0P42Z-A" alt="" />
+          </div>
+          <div class="video__details">
+            <div class="author">
+              <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+            </div>
+            <div class="title">
+              <h3>
+              Build Complete Ecommerce Website in Angular 13 - Home Page
+              </h3>
+              <a href="https://www.youtube.com/c/Therichpost">Therichpost</a>
+              <span>240 Views • 3 Months Ago</span>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="video__thumbnail">
+            <img src="https://i.ytimg.com/an_webp/CQXtZFaqvLI/mqdefault_6s.webp?du=3000&sqp=COaugpgG&rs=AOn4CLDyKUWzeSo9cDDyUmf7Idrq75l0cw" alt="" />
+          </div>
+          <div class="video__details">
+            <div class="author">
+              <img src="https://yt3.ggpht.com/ytc/AMLnZu9Qb2nJ1WCbWBYdLs42PRhh76h0lMrY76r8qrj1Jg=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="" />
+            </div>
+            <div class="title">
+              <h3>
+              Angular 14 Free Admin Dashboard Template Download
+              </h3>
+              <a href="https://www.youtube.com/c/Therichpost">FreeeTemplates</a>
+              <span>240 Views • 3 Months Ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
